@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DI_14_AbsoluteBeginners_31.Vistas;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,29 @@ namespace DI_14_AbsoluteBeginners_31
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(DonutPage));
         }
+
+        private void donutClick(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(DonutPage));
+        }
+
+        private void coffeeClick(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(CoffeePage));
+        }
+
+        private void scheduleClick(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(SchedulePage));
+        }
+
+        private void completeClick(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(CompletePage));
+        }
+
+
     }
 }

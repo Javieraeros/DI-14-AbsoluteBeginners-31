@@ -11,6 +11,7 @@
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <!--Selector -->
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -19,31 +20,33 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Style="{StaticResource botoncete}">
+            <Button Grid.Column="0" Style="{StaticResource botoncete}" Click="donutClick">
                 <StackPanel Orientation="Horizontal">
                     <Image Name="Donut" Source="Assets\donut-icon.png" Style="{StaticResource imagenes}"></Image>
                     <TextBlock Text="Donuts" Foreground="White"></TextBlock>
                 </StackPanel>
             </Button>
-            <Button Grid.Column="1" Style="{StaticResource botoncete}">
+            <Button Grid.Column="1" Style="{StaticResource botoncete}" Click="coffeeClick">
                 <StackPanel Orientation="Horizontal">
                     <Image Name="Coffee" Source="Assets\coffee-icon.png" Style="{StaticResource imagenes}"></Image>
                     <TextBlock Text="Coffee" Foreground="White"></TextBlock>
                 </StackPanel>
             </Button>
-            <Button Grid.Column="2" Style="{StaticResource botoncete}">
+            <Button Grid.Column="2" Style="{StaticResource botoncete}" Click="scheduleClick">
                 <StackPanel Orientation="Horizontal">
                     <Image Name="Schedule" Source="Assets\schedule-icon.png" Style="{StaticResource imagenes}"></Image>
                     <TextBlock Text="Schedule" Foreground="White"></TextBlock>
                 </StackPanel>
             </Button>
-            <Button Grid.Column="3" Style="{StaticResource botoncete}">
+            <Button Grid.Column="3" Style="{StaticResource botoncete}" Click="completeClick">
                 <StackPanel Orientation="Horizontal">
                     <Image Name="Complete" Source="Assets\schedule-icon.png" Style="{StaticResource imagenes}"></Image>
                     <TextBlock Text="Complete" Foreground="White"></TextBlock>
                 </StackPanel>
             </Button>
         </Grid>
+        
+        <!-- Pantalla principal-->
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
