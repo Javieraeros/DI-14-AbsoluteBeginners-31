@@ -107,6 +107,14 @@
     <None Include="DI-14-AbsoluteBeginners-31_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\background.jpg" />
+    <Content Include="Assets\coffee-icon.png" />
+    <Content Include="Assets\color-logo.png" />
+    <Content Include="Assets\complete-icon.png" />
+    <Content Include="Assets\donut-icon.png" />
+    <Content Include="Assets\schedule-icon.png" />
+    <Content Include="Assets\ticket.jpg" />
+    <Content Include="Assets\white-logo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

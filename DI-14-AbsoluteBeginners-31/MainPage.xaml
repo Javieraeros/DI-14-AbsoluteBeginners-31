@@ -22,8 +22,26 @@
 
             <Button Grid.Column="0" Style="{StaticResource botoncete}">
                 <StackPanel Orientation="Horizontal">
-                    <Image></Image>
-                    <TextBlock></TextBlock>
+                    <Image Name="Donut" Source="Assets\donut-icon.png" Style="{StaticResource imagenes}"></Image>
+                    <TextBlock Text="Donuts" Foreground="White"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="1" Style="{StaticResource botoncete}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Name="Coffee" Source="Assets\coffee-icon.png" Style="{StaticResource imagenes}"></Image>
+                    <TextBlock Text="Coffee" Foreground="White"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="2" Style="{StaticResource botoncete}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Name="Schedule" Source="Assets\schedule-icon.png" Style="{StaticResource imagenes}"></Image>
+                    <TextBlock Text="Schedule" Foreground="White"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="3" Style="{StaticResource botoncete}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Name="Complete" Source="Assets\schedule-icon.png" Style="{StaticResource imagenes}"></Image>
+                    <TextBlock Text="Complete" Foreground="White"></TextBlock>
                 </StackPanel>
             </Button>
         </Grid>
