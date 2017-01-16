@@ -16,4 +16,8 @@
         <Setter Property="Width" Value="20"></Setter>
         <Setter Property="Margin" Value="0,0,10,0"></Setter>
     </Style>
+    <Style x:Key="ImagenLateral" TargetType="Image">
+        <Setter Property="Source" Value="Assets/bacground.jpg"/>
+        <Setter Property="Stretch" Value="UniformToFill"></Setter>
+    </Style>
 </ResourceDictionary>
