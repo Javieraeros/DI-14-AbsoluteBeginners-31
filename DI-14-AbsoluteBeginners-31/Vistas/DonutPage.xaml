@@ -6,38 +6,76 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="WindowStates">
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="450" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="txt1.(Grid.RowSpan)" Value="1" />
+                        <Setter Target="txt1.(Grid.Row)" Value="1"/>
+                        <Setter Target="Slider1.(Grid.Row)" Value="1"/>
 
-    <Grid Background="Red">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+                        <Setter Target="txt2.(Grid.RowSpan)" Value="1" />
+                        <Setter Target="txt2.(Grid.Row)" Value="2"/>
+                        <Setter Target="Slider2.(Grid.Row)" Value="2"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="txt1.(Grid.Row)" Value="1"/>
+                        <Setter Target="Slider1.(Grid.Row)" Value="2"/>
+                        <Setter Target="Slider1.(Grid.Column)" Value="0"/>
+                        <Setter Target="txt2.(Grid.Row)" Value="3"/>
+                        <Setter Target="Slider2.(Grid.Row)" Value="4"/>
+                        <Setter Target="Slider2.(Grid.Column)" Value="0"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid Name="GridPrincipal" Background="Red">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-        <Image Style="{StaticResource LogoBlanco}"/>
+            <Image Style="{StaticResource LogoBlanco}"/>
 
-        <TextBlock Grid.Row="1"
+            <TextBlock Name="txt1"
+                   Grid.Row="1"
                    Style="{StaticResource Texto}"
                    Text="Original Glazed Count:"/>
 
-        <Slider Grid.Row="1"
+            <Slider Name="Slider1"
+                Grid.Row="1"
                 Grid.Column="1"
                 Maximum="24"
                 Margin="20,20,20,0"/>
 
-        <TextBlock Grid.Row="2"         
+            <TextBlock Name="txt2"
+                   Grid.Row="2"         
                    Style="{StaticResource Texto}"
                    Text="Speedway Special Count:"/>
 
-        <Slider Grid.Row="2"
+            <Slider Name="Slider2"
+                Grid.Row="2"
                 Grid.Column="1"
                 Maximum="24"
                 Margin="20,20,20,0"/>
 
+        </Grid>
     </Grid>
 </Page>
