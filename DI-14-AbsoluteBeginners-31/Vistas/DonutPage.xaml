@@ -57,6 +57,7 @@
             <TextBlock Name="txt1"
                    Grid.Row="1"
                    Style="{StaticResource Texto}"
+                       x:Uid="DonutGlaseado"
                    Text="Original Glazed Count:"/>
 
             <Slider Name="Slider1"
@@ -68,6 +69,7 @@
             <TextBlock Name="txt2"
                    Grid.Row="2"         
                    Style="{StaticResource Texto}"
+                       x:Uid="DonutRapidez"
                    Text="Speedway Special Count:"/>
 
             <Slider Name="Slider2"

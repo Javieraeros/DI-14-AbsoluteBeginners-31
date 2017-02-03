@@ -21,7 +21,8 @@
 
         <Image Style="{StaticResource LogoBlanco}"/>
 
-        <TextBlock Grid.Row="1"
+        <TextBlock x:Uid="HorarioSelecciona"
+                   Grid.Row="1"
                    Style="{StaticResource Texto}"
                    Text="Pickup:"/>
         <CalendarDatePicker Grid.Row="1" Grid.Column="1" Foreground="White"/>

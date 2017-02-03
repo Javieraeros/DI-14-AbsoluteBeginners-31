@@ -22,7 +22,8 @@
         <StackPanel Grid.Row="1"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center">
-            <TextBlock Text="Order"
+            <TextBlock x:Uid="Comanda"
+                       Text="Order"
                        FontSize="36"
                        HorizontalAlignment="Center"/>
             <TextBlock Text="96"
